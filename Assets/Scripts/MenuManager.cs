@@ -116,16 +116,6 @@ public class MenuManager : MonoBehaviour
         OptionsIngame.SetActive(false);
     }
 
-    // SCENE TRANSITION
-
-    public void CloseScene()
-    {
-
-    }
-    public void OpenScene()
-    {
-
-    }
 }
 
 
