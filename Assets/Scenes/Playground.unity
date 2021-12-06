@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &5089006
 SphereCollider:
@@ -8262,6 +8263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iconPrefab: {fileID: 8149350738345353551, guid: d2d81470685cfa840b0a82873f9c636b, type: 3}
+  Obj: {fileID: 0}
   collectibles:
   - {fileID: 1594037440}
   - {fileID: 1613375291}
@@ -17058,6 +17060,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5393215578589016642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
   m_PrefabInstance: {fileID: 5393215579111688471}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &331956597 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5393215578589016641, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 5393215579111688471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &336994491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24865,6 +24872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 92f2377e861992e47b5657b35af3c0bf, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!65 &469436098
 BoxCollider:
@@ -28752,6 +28760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 92f2377e861992e47b5657b35af3c0bf, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!4 &553370576 stripped
 Transform:
@@ -29040,6 +29049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &566816723
 SphereCollider:
@@ -29819,6 +29829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 1668718342}
   image: {fileID: 0}
 --- !u!135 &576914192
 SphereCollider:
@@ -30350,6 +30361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 92f2377e861992e47b5657b35af3c0bf, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!4 &579932121 stripped
 Transform:
@@ -47387,6 +47399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &914152912
 SphereCollider:
@@ -52722,6 +52735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &1024476180
 SphereCollider:
@@ -70982,6 +70996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &1404694844
 SphereCollider:
@@ -79107,6 +79122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 92f2377e861992e47b5657b35af3c0bf, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!1 &1596877704
 GameObject:
@@ -79937,6 +79953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &1613375292
 SphereCollider:
@@ -96199,6 +96216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 92f2377e861992e47b5657b35af3c0bf, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!65 &1880466959
 BoxCollider:
@@ -97164,6 +97182,7 @@ GameObject:
   - component: {fileID: 1905105364}
   - component: {fileID: 1905105366}
   - component: {fileID: 1905105365}
+  - component: {fileID: 1905105367}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -97228,6 +97247,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905105363}
   m_CullTransparentMesh: 1
+--- !u!114 &1905105367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905105363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7b6974956bb8f4a826e7912ca81e1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconPrefab: {fileID: 8149350738345353551, guid: d2d81470685cfa840b0a82873f9c636b, type: 3}
+  Obj: {fileID: 0}
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  compassImage: {fileID: 143663310}
+  player: {fileID: 331956597}
+  maxDistance: 200
 --- !u!1 &1906222876
 GameObject:
   m_ObjectHideFlags: 0
@@ -108475,6 +108516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 5f8695a1dd0ddd14dab0ca70af6ecb7d, type: 3}
+  Obj: {fileID: 0}
   image: {fileID: 0}
 --- !u!135 &2097095142
 SphereCollider:

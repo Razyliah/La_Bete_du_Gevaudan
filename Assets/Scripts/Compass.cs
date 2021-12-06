@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Compass : MonoBehaviour
 {
     public GameObject iconPrefab;
+    public GameObject Obj;
     public List<Collectibles> collectibles = new List<Collectibles>();
     public RawImage compassImage;
     public Transform player;
