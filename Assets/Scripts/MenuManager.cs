@@ -22,10 +22,19 @@ public class MenuManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("level", 1);
             int saved = PlayerPrefs.GetInt("level", 1);
-
         }
-        
-
+        else if (transitionManager.isNiveau2 == true)
+        {
+            int saved = PlayerPrefs.GetInt("level", 2);
+        }
+        else if (transitionManager.isNiveau3 == true)
+        {
+            int saved = PlayerPrefs.GetInt("level", 3);
+        }
+        else if (transitionManager.isNiveau4 == true)
+        {
+            int saved = PlayerPrefs.GetInt("level", 4);
+        }
 
     }
 
@@ -80,6 +89,19 @@ public class MenuManager : MonoBehaviour
     public void TutoBaliseActive()
     {
         TutoBalise.SetActive(true);
+
+        if (transitionManager.isNiveau2 == true)
+        {
+            Niveau_2.SetActive(true);
+        }
+        else if (transitionManager.isNiveau3 == true)
+        {
+            Niveau_3.SetActive(true);
+        }
+        else if (transitionManager.isNiveau4 == true)
+        {
+            Niveau_4.SetActive(true);
+        }
     }
 
     public void TutoMapActive()

@@ -21,7 +21,6 @@ public class button : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void Start()
     {
-
         TexteToShow.SetActive(false);
     }
     public void Update()
