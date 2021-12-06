@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -773,7 +773,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1619069444}
   PressedButton: {fileID: 197071867}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &197071871
 MonoBehaviour:
@@ -1078,18 +1077,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266691879}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
@@ -1168,7 +1155,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1842382197}
   PressedButton: {fileID: 266691874}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &266691880
 MonoBehaviour:
@@ -1842,7 +1828,7 @@ MonoBehaviour:
   TransitionGame: {fileID: 246233506}
   MapIngame: {fileID: 0}
   Victory: {fileID: 0}
-  transitionManager: {fileID: 0}
+  transitionManager: {fileID: 1958512747}
   HideButton: {fileID: 0}
   ShowButton: {fileID: 0}
 --- !u!4 &390571883
@@ -3479,7 +3465,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 149157852}
   PressedButton: {fileID: 773767106}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &773767110
 MonoBehaviour:
@@ -3673,7 +3658,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 798768461}
   PressedButton: {fileID: 778873718}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &778873722
 MonoBehaviour:
@@ -4801,7 +4785,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1777451602}
   PressedButton: {fileID: 980543048}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &980543054
 MonoBehaviour:
@@ -5117,7 +5100,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1384584854}
   PressedButton: {fileID: 1046992639}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1046992643
 MonoBehaviour:
@@ -5727,7 +5709,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 562778505}
   PressedButton: {fileID: 1150844823}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1150844827
 MonoBehaviour:
@@ -5998,7 +5979,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1041395416}
   PressedButton: {fileID: 1158851837}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1158851843
 MonoBehaviour:
@@ -7112,7 +7092,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 2130406067}
   PressedButton: {fileID: 1425296847}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1425296851
 MonoBehaviour:
@@ -7383,7 +7362,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1760064540}
   PressedButton: {fileID: 1430420120}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1430420126
 MonoBehaviour:
@@ -7549,7 +7527,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1145329463}
   PressedButton: {fileID: 1457753700}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1457753704
 MonoBehaviour:
@@ -7892,7 +7869,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1297024788}
   PressedButton: {fileID: 1476201680}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1476201684
 MonoBehaviour:
@@ -10301,7 +10277,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 415129281}
   PressedButton: {fileID: 1885039550}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1885039554
 MonoBehaviour:
@@ -10470,7 +10445,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 685762912}
   PressedButton: {fileID: 1907534073}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1907534077
 MonoBehaviour:
@@ -10663,7 +10637,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1776663710}
   PressedButton: {fileID: 1926186172}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1926186176
 MonoBehaviour:
@@ -11129,7 +11102,6 @@ MonoBehaviour:
   TexteToShow: {fileID: 1283901845}
   PressedButton: {fileID: 1977908786}
   isPressed: 0
-  isShowed: 0
   taille: 0
 --- !u!114 &1977908790
 MonoBehaviour:

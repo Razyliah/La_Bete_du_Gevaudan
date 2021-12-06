@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class button : MonoBehaviour
+public class button : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public GameObject ButtonToZoom;
     public GameObject TexteToShow;
     public GameObject PressedButton;
 
     public bool isPressed;
-    public bool isShowed;
+
     public float taille;
 
     public void zoomIn()
@@ -19,11 +19,11 @@ public class button : MonoBehaviour
         isPressed = true;
     }
 
-    public void showText()
+    public void Start()
     {
-        isShowed = true;
+
+        TexteToShow.SetActive(false);
     }
-    
     public void Update()
     {
 
@@ -39,22 +39,18 @@ public class button : MonoBehaviour
         {
             isPressed = false;
         }
-
-        // Si le bouton est presse, j'affiche mon texte
-        if (isShowed == true)
-        {
-            TexteToShow.SetActive(true);
-        }
-        else
-        {
-            TexteToShow.SetActive(false);
-            isShowed = false;
-        }
-
         
     }
 
-    // public void OnPointerExit(PointerEventData PressedButton){
-    //     isPressed=false;
-    // }
+    public void OnPointerDown(PointerEventData eventData)
+    {
+
+        TexteToShow.SetActive(true);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        TexteToShow.SetActive(false);
+    }
+
 }

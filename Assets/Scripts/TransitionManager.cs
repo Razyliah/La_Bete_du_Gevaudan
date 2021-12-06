@@ -11,28 +11,36 @@ public class TransitionManager : MonoBehaviour
     public bool isNiveau2;
     public bool isNiveau3;
     public bool isNiveau4;
-  
+
+    private void Start()
+    {
+        // Methode 1
+        //DontDestroyOnLoad(gameObject);
+    }
 
     // SCENE TRANSITION
-    
+
     //Open Scene
     public void OpenMenuScene()
     {
         SceneManager.LoadScene (sceneName:"Menu");
 
         if (isNiveau1 == true){
-        isNiveau2 = true;
-        isNiveau1 = false;
+            isNiveau2 = true;
+            isNiveau1 = false;
+            PlayerPrefs.SetInt("level", 2);
         }
 
         else if (isNiveau2 == true){
-        isNiveau3 = true;
-        isNiveau2 = false;
+            isNiveau3 = true;
+            isNiveau2 = false;
+            PlayerPrefs.SetInt("level", 3);
         }
 
         else if (isNiveau3 == true){
-        isNiveau4 = true;
-        isNiveau3 = false;
+            isNiveau4 = true;
+            isNiveau3 = false;
+            PlayerPrefs.SetInt("level", 4);
         }
     }
 
@@ -56,5 +64,10 @@ public class TransitionManager : MonoBehaviour
     {
         Time.timeScale = 1;
         AudioListener.pause = false;
+    }
+
+    public void ResetSave()
+    {
+        PlayerPrefs.SetInt("level", 1);
     }
 }

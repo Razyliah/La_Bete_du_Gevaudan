@@ -10,7 +10,7 @@ public class ProgressBar : MonoBehaviour
     public int maximum;
     public int current;
     public Image Mask;
-
+    public MenuManager menuManager;
 
     private void Update()
     {
@@ -21,5 +21,9 @@ public class ProgressBar : MonoBehaviour
     {
         float fillAmount = (float)current / (float)maximum;
         Mask.fillAmount = fillAmount;
+
+        if( (float)current == (float)maximum){
+            menuManager.VictoryActive();
+        }
     }
 }

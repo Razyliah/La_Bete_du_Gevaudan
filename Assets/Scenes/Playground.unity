@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15088084, g: 0.17280799, b: 0.15753743, a: 1}
+  m_IndirectSpecularColor: {r: 0.15088122, g: 0.17280847, b: 0.15753795, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4365,6 +4365,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Niveau: {fileID: 0}
+  Niveau_2: {fileID: 0}
+  Niveau_3: {fileID: 0}
+  Niveau_4: {fileID: 0}
   Accueil: {fileID: 0}
   Options: {fileID: 0}
   MainMenu: {fileID: 0}
@@ -4379,6 +4382,7 @@ MonoBehaviour:
   TransitionGame: {fileID: 0}
   MapIngame: {fileID: 173825385}
   Victory: {fileID: 619092396}
+  transitionManager: {fileID: 1190770623}
   HideButton: {fileID: 1090352863}
   ShowButton: {fileID: 0}
 --- !u!4 &76922756
@@ -17781,6 +17785,7 @@ MonoBehaviour:
   maximum: 100
   current: 0
   Mask: {fileID: 2065840286}
+  menuManager: {fileID: 76922755}
 --- !u!1 &352708844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1014268425052216762, guid: d028efd283c7db742968e543d2726f6b, type: 3}
@@ -45972,7 +45977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1033, y: 474}
+  m_AnchoredPosition: {x: -1033, y: 454}
   m_SizeDelta: {x: 216, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876982380
@@ -60814,6 +60819,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMenu: 1
+  isNiveau1: 1
+  isNiveau2: 0
+  isNiveau3: 0
+  isNiveau4: 0
 --- !u!4 &1190770624
 Transform:
   m_ObjectHideFlags: 0
@@ -67599,7 +67608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1039, y: -509}
+  m_AnchoredPosition: {x: 1039, y: -433}
   m_SizeDelta: {x: 232, y: 224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1335979044
@@ -104485,7 +104494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -690, y: 317}
+  m_AnchoredPosition: {x: -690, y: 302}
   m_SizeDelta: {x: 216, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018871314

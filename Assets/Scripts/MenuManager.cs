@@ -12,6 +12,23 @@ public class MenuManager : MonoBehaviour
     public GameObject HideButton, ShowButton;
     private bool HideIcons;
 
+
+    // Sauvegarde de valeurs entre scènes
+    private void Start()
+    {
+        
+        //Methode 2
+        if (transitionManager.isNiveau1== true)
+        {
+            PlayerPrefs.SetInt("level", 1);
+            int saved = PlayerPrefs.GetInt("level", 1);
+
+        }
+        
+
+
+    }
+
     // OPEN CANVAS
     public void OptionActive()
     {
@@ -20,6 +37,7 @@ public class MenuManager : MonoBehaviour
 
     public void NiveauActive()
     {
+
         Niveau.SetActive(true);
 
         if (transitionManager.isNiveau2 == true){
@@ -195,9 +213,12 @@ public class MenuManager : MonoBehaviour
     // ICONE MANAGER
 
     public void Update(){
+        if(HideButton != null && ShowButton != null)
+        {
             if (HideIcons != true){
-                HideButton.SetActive(true);
-                ShowButton.SetActive(false); 
+                    HideButton.SetActive(true);
+                    ShowButton.SetActive(false); 
+                }  
             }       
     }
 }

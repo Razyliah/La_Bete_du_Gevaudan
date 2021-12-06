@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1661,6 +1661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Niveau: {fileID: 0}
+  Niveau_2: {fileID: 0}
+  Niveau_3: {fileID: 0}
+  Niveau_4: {fileID: 0}
   Accueil: {fileID: 0}
   Options: {fileID: 0}
   MainMenu: {fileID: 0}
@@ -1675,6 +1678,7 @@ MonoBehaviour:
   TransitionGame: {fileID: 0}
   MapIngame: {fileID: 0}
   Victory: {fileID: 0}
+  transitionManager: {fileID: 745968482}
   HideButton: {fileID: 0}
   ShowButton: {fileID: 0}
 --- !u!4 &581156351
@@ -1975,6 +1979,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMenu: 1
+  isNiveau1: 1
+  isNiveau2: 0
+  isNiveau3: 0
+  isNiveau4: 0
 --- !u!4 &745968483
 Transform:
   m_ObjectHideFlags: 0
@@ -2576,6 +2584,18 @@ MonoBehaviour:
       - m_Target: {fileID: 581156350}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: TransitionGameActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 745968482}
+        m_TargetAssemblyTypeName: TransitionManager, Assembly-CSharp
+        m_MethodName: ResetSave
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
