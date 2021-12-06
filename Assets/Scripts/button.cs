@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class button : MonoBehaviour
 {
-    public GameObject Button;
-    public GameObject Texte;
-    public bool isPressed = false;
-    public bool isShowed = false;
+    public GameObject ButtonToZoom;
+    public GameObject TexteToShow;
+    public GameObject PressedButton;
+
+    public bool isPressed;
+    public bool isShowed;
     public float taille;
 
     public void zoomIn()
@@ -20,6 +23,7 @@ public class button : MonoBehaviour
     {
         isShowed = true;
     }
+    
     public void Update()
     {
 
@@ -27,24 +31,30 @@ public class button : MonoBehaviour
         if (isPressed == true)
         {
             taille += 0.002f;
-            Button.transform.localScale += new Vector3(taille, taille, 0);
+            ButtonToZoom.transform.localScale += new Vector3(taille, taille, 0);
         }
 
-        // Si le bouton atteint la bonne taille, il passe à la slide suivante en éteignant la slide active
+        // Si le bouton atteint la bonne taille, il passe ï¿½ la slide suivante en ï¿½teignant la slide active
         if (taille >= 0.1 )
         {
             isPressed = false;
         }
 
-        // Si le bouton est pressé, j'affiche mon texte
+        // Si le bouton est presse, j'affiche mon texte
         if (isShowed == true)
         {
-            Texte.SetActive(true);
+            TexteToShow.SetActive(true);
         }
         else
         {
-            Texte.SetActive(false);
+            TexteToShow.SetActive(false);
             isShowed = false;
         }
+
+        
     }
+
+    // public void OnPointerExit(PointerEventData PressedButton){
+    //     isPressed=false;
+    // }
 }

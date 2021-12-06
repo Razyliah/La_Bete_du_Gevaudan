@@ -1,10 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject Niveau, Accueil, Options, MainMenu, Lore, TutoBalise, TutoMap, TutoLoupe, TutoProgress, TutoBoussole, MenuIngame, OptionsIngame;
+    public GameObject Niveau, Niveau_2,Niveau_3,Niveau_4, Accueil, Options, MainMenu, Lore, TutoBalise, TutoMap, TutoLoupe, TutoProgress, TutoBoussole, MenuIngame, OptionsIngame, TransitionGame, MapIngame, Victory;
+
+    public TransitionManager transitionManager;
+
+    public GameObject HideButton, ShowButton;
+    private bool HideIcons;
 
     // OPEN CANVAS
     public void OptionActive()
@@ -15,6 +21,32 @@ public class MenuManager : MonoBehaviour
     public void NiveauActive()
     {
         Niveau.SetActive(true);
+
+        if (transitionManager.isNiveau2 == true){
+            Niveau_2.SetActive(true);
+        }
+        else if (transitionManager.isNiveau3 == true){
+            Niveau_3.SetActive(true);
+        }
+        else if (transitionManager.isNiveau4 == true){
+            Niveau_4.SetActive(true);
+        }
+    }
+
+    public void Niveau2Active()
+    {
+
+        Niveau_2.SetActive(true); 
+    }
+
+    public void Niveau3Active()
+    {
+        Niveau_3.SetActive(true);
+    }
+
+    public void Niveau4Active()
+    {
+        Niveau_4.SetActive(true);
     }
 
     public void MainMenuActive()
@@ -59,6 +91,20 @@ public class MenuManager : MonoBehaviour
         OptionsIngame.SetActive(true);
     }
 
+    public void TransitionGameActive()
+    {
+        TransitionGame.SetActive(true);
+    }
+
+    public void MapIngameActive()
+    {
+        MapIngame.SetActive(true);
+        HideIcons = true;
+    }
+
+    public void VictoryActive(){
+        Victory.SetActive(true);
+    }
 
 
     // CLOSE CANVAS
@@ -70,6 +116,21 @@ public class MenuManager : MonoBehaviour
     public void CloseNiveau()
     {
         Niveau.SetActive(false);
+    }
+
+    public void CloseNiveau2()
+    {
+        Niveau_2.SetActive(false);
+    }
+
+    public void CloseNiveau3()
+    {
+        Niveau_3.SetActive(false);
+    }
+
+    public void CloseNiveau4()
+    {
+        Niveau_4.SetActive(false);
     }
 
     public void CloseMainMenu()
@@ -116,6 +177,29 @@ public class MenuManager : MonoBehaviour
         OptionsIngame.SetActive(false);
     }
 
+    public void CloseTransitionGame()
+    {
+        TransitionGame.SetActive(false);
+    }
+    
+    public void CloseMapIngame()
+    {
+        MapIngame.SetActive(false);
+        HideIcons = false;
+    }
+
+    public void CloseVictory(){
+        Victory.SetActive(false);
+    }
+
+    // ICONE MANAGER
+
+    public void Update(){
+            if (HideIcons != true){
+                HideButton.SetActive(true);
+                ShowButton.SetActive(false); 
+            }       
+    }
 }
 
 
