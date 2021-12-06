@@ -1,28 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OnTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void OnTriggerEnter(Collider col)
+
+    
+    public GameObject uiObject;
+    private void Start()
     {
-        if (col.name == "PlayerCapsule")
-        {
-            print("trigger enter zone");
-        }
+        uiObject.SetActive(false);
     }
 
-    void OnTriggerExit(Collider col)
+    private void OnTriggerEnter(Collider Player)
     {
-        if (col.name == "PlayerCapsule")
+        if(Player.gameObject.tag == "Player")
         {
-            print("trigger exit zone");
+            uiObject.SetActive(true);
+            StartCoroutine(WaitForSec());
         }
     }
-
-    private void OnTriggerStay(Collider col)
+    IEnumerator WaitForSec()
     {
-        print("trigger stay on zone");
+        yield return new WaitForSeconds(5);
+        uiObject.SetActive(false);
     }
 }
