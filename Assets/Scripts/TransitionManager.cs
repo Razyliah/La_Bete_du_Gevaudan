@@ -24,6 +24,7 @@ public class TransitionManager : MonoBehaviour
     public void OpenMenuScene()
     {
         SceneManager.LoadScene (sceneName:"Menu");
+        Screen.orientation = ScreenOrientation.Portrait;
 
         if (isNiveau1 == true){
             isNiveau2 = true;
@@ -47,11 +48,13 @@ public class TransitionManager : MonoBehaviour
     public void OpenMenuIngameScene()
     {
         SceneManager.LoadScene (sceneName:"Menu Ingame");
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
     public void OpenGameScene()
     {
         SceneManager.LoadScene (sceneName:"Playground");
+        Screen.orientation = ScreenOrientation.Landscape;
     }
 
     public void PauseGame ()
