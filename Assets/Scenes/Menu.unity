@@ -733,7 +733,7 @@ RectTransform:
   m_Children:
   - {fileID: 1619069445}
   m_Father: {fileID: 747994301}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -755,8 +755,10 @@ MonoBehaviour:
   dialogue:
     name: "Gabriel Florent Choiseul de Beaupr\xE9"
     sentences:
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam et egestas nibh
-      posuere non gravida fames
+    - "Etait depuis 1723 \xE9v\xEAque de Mende et comte du G\xE9vaudan.  Lors de
+      son amendement, il n\u2019h\xE9site pas \xE0 qualifier la B\xEAte comme \xE9tant
+      un fl\xE9au de Dieu. \nProt\xE9gez le village en r\xE9pandant la lumiere du
+      seigneur."
 --- !u!114 &197071870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,6 +854,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &197071872
@@ -1101,6 +1127,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &266691877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1171,8 +1221,10 @@ MonoBehaviour:
   dialogue:
     name: "Gabriel Florent Choiseul de Beaupr\xE9"
     sentences:
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam et egestas nibh
-      posuere non gravida fames
+    - "Etait depuis 1723 \xE9v\xEAque de Mende et comte du G\xE9vaudan.  Lors de
+      son amendement, il n\u2019h\xE9site pas \xE0 qualifier la B\xEAte comme \xE9tant
+      un fl\xE9au de Dieu. \nProt\xE9gez le village en r\xE9pandant la lumiere du
+      seigneur."
 --- !u!1 &267439771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1317,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Griffe
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &267439774
@@ -1409,6 +1473,133 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &292890153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292890155}
+  - component: {fileID: 292890154}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &292890154
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292890153}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d00809072fccfba40b143da1252068f9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &292890155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292890153}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -189.60284, y: 151.58496, z: -659.90466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 828641463}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302685442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cb93e5d8b529242a0dc0da42e720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainSlider: {fileID: 0}
   sounds: []
 --- !u!114 &339694486
 MonoBehaviour:
@@ -1672,13 +1862,13 @@ MonoBehaviour:
       - m_Target: {fileID: 828641462}
         m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
         m_MethodName: Play
-        m_Mode: 1
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &339694487
@@ -1905,13 +2095,13 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 828641461}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 828641464}
+        m_TargetAssemblyTypeName: SliderVolume, Assembly-CSharp
+        m_MethodName: VolumeUpdater
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1946,6 +2136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d31f7d921a3019478b67382f49fdc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionManager: {fileID: 1958512747}
   Niveau: {fileID: 1869071400}
   Niveau_2: {fileID: 1715459266}
   Niveau_3: {fileID: 1786472680}
@@ -1954,6 +2145,9 @@ MonoBehaviour:
   Options: {fileID: 957165113}
   MainMenu: {fileID: 134633955}
   Lore: {fileID: 85095742}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
   TutoBalise: {fileID: 826806213}
   TutoMap: {fileID: 283415939}
   TutoLoupe: {fileID: 1557325668}
@@ -1964,9 +2158,9 @@ MonoBehaviour:
   TransitionGame: {fileID: 246233506}
   MapIngame: {fileID: 0}
   Victory: {fileID: 0}
-  transitionManager: {fileID: 1958512747}
   HideButton: {fileID: 0}
   ShowButton: {fileID: 0}
+  isNiveau: 0
 --- !u!4 &390571883
 Transform:
   m_ObjectHideFlags: 0
@@ -2235,6 +2429,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 390571882}
@@ -2906,6 +3112,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Griffe
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &609161338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3440,6 +3658,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 699909199}
+  - {fileID: 1096760608}
   - {fileID: 773767107}
   - {fileID: 1046992640}
   - {fileID: 1977908787}
@@ -3560,9 +3779,8 @@ RectTransform:
   m_LocalScale: {x: 0.8449748, y: 0.87786853, z: 0.87786853}
   m_Children:
   - {fileID: 149157853}
-  - {fileID: 1096760608}
   m_Father: {fileID: 747994301}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3682,6 +3900,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &773767111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3776,8 +4018,10 @@ MonoBehaviour:
   dialogue:
     name: "Gabriel Florent Choiseul de Beaupr\xE9"
     sentences:
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam et egestas nibh
-      posuere non gravida fames
+    - "Etait depuis 1723 \xE9v\xEAque de Mende et comte du G\xE9vaudan.  Lors de
+      son amendement, il n\u2019h\xE9site pas \xE0 qualifier la B\xEAte comme \xE9tant
+      un fl\xE9au de Dieu. \nProt\xE9gez le village en r\xE9pandant la lumiere du
+      seigneur."
 --- !u!114 &778873721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3873,6 +4117,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &778873723
@@ -4175,6 +4443,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828641463}
   - component: {fileID: 828641462}
+  - component: {fileID: 828641464}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -4194,17 +4463,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cb93e5d8b529242a0dc0da42e720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainSlider: {fileID: 362885604}
   sounds:
-  - name: Menu
-    clip: {fileID: 8300000, guid: d00809072fccfba40b143da1252068f9, type: 3}
-    volume: 0
-    pitch: 0
+  - name: Page
+    clip: {fileID: 8300000, guid: c45157c6ea90ddd4f937b146efa69180, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Paille
+    clip: {fileID: 8300000, guid: 0686caba2af9fd746b7bef1c5472f28c, type: 3}
+    volume: 0.622
+    pitch: 1
+    source: {fileID: 0}
+  - name: Griffe
+    clip: {fileID: 8300000, guid: 594497219bf31cf47af283bf1d79fc83, type: 3}
+    volume: 0.342
+    pitch: 1
+    source: {fileID: 0}
+  - name: Block
+    clip: {fileID: 8300000, guid: d517a4d872912f64fac291a690cdf261, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Arrache
+    clip: {fileID: 8300000, guid: 12212d8663ce5e44695ac22ee49ca8c5, type: 3}
+    volume: 0.519
+    pitch: 1
+    source: {fileID: 0}
+  - name: Plume
+    clip: {fileID: 8300000, guid: a6e82a47efe9b424bbef52ebc4f2917f, type: 3}
+    volume: 0.761
+    pitch: 1
     source: {fileID: 0}
 --- !u!4 &828641463
 Transform:
@@ -4216,10 +4504,25 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 774.46515, y: 998.4429, z: 364.27267}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 292890155}
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &828641464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828641461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9707313aa29f40c44a7c7ecc3af45742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 292890154}
+  volumeSlider: {fileID: 362885604}
 --- !u!1 &883388238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4681,6 +4984,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &975908778
 GameObject:
   m_ObjectHideFlags: 0
@@ -4785,6 +5100,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &975908781
@@ -4920,6 +5247,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &980543051
@@ -5252,7 +5591,7 @@ RectTransform:
   m_Children:
   - {fileID: 1384584855}
   m_Father: {fileID: 747994301}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5370,6 +5709,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1046992644
@@ -5572,14 +5935,14 @@ RectTransform:
   m_GameObject: {fileID: 1096760607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1834671, y: 1.1391227, z: 1.1391227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 773767107}
+  m_Father: {fileID: 747994301}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -736.1166, y: -1710.9624}
+  m_AnchoredPosition: {x: -420.99994, y: -806}
   m_SizeDelta: {x: 128, y: 109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096760609
@@ -5636,6 +5999,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Griffe
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1096760610
@@ -5882,8 +6257,10 @@ MonoBehaviour:
   dialogue:
     name: "Gabriel Florent Choiseul de Beaupr\xE9"
     sentences:
-    - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam et egestas nibh
-      posuere non gravida fames
+    - "Etait depuis 1723 \xE9v\xEAque de Mende et comte du G\xE9vaudan.  Lors de
+      son amendement, il n\u2019h\xE9site pas \xE0 qualifier la B\xEAte comme \xE9tant
+      un fl\xE9au de Dieu. \nProt\xE9gez le village en r\xE9pandant la lumiere du
+      seigneur."
 --- !u!114 &1150844826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5979,6 +6356,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1150844828
@@ -6114,6 +6515,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1158851840
@@ -6351,6 +6764,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1265505234
@@ -6860,6 +7285,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Griffe
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1366765706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7077,6 +7514,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1403962519
@@ -7364,6 +7813,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1425296852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7499,6 +7972,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 390571882}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: Niveau2Active
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1430420123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7569,7 +8066,9 @@ MonoBehaviour:
   dialogue:
     name: "Jacques Andr\xE9 Portefaix"
     sentences:
-    - "Loreeeeeem c'est la vieb tu sais \xE7a"
+    - "Avait 13 ans quand la B\xEAte attaqua un de ses camarades. Au lieu de fuir,
+      il d\xE9cide de la confronter pour sauver son ami. Ensemble, les jeunes bergers
+      r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont \xE9chapp\xE9s!"
 --- !u!1 &1433274358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7701,7 +8200,9 @@ MonoBehaviour:
   dialogue:
     name: "Jacques Andr\xE9 Portefaix"
     sentences:
-    - "Loreeeeeem c'est la vieb tu sais \xE7a"
+    - "Avait 13 ans quand la B\xEAte attaqua un de ses camarades. Au lieu de fuir,
+      il d\xE9cide de la confronter pour sauver son ami. Ensemble, les jeunes bergers
+      r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont \xE9chapp\xE9s!"
 --- !u!114 &1457753703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7797,6 +8298,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1457753705
@@ -8115,6 +8640,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1476201685
@@ -8622,6 +9159,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Griffe
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1634738203
@@ -9234,6 +9783,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Arrache
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1725316218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9400,9 +9961,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d00809072fccfba40b143da1252068f9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.404
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -9947,6 +10508,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1793609207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10303,7 +10876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1860780307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10622,6 +11195,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1885039555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10814,6 +11399,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1907534078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10980,6 +11589,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Block
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1926186177
@@ -11154,11 +11775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c63b3191f21724789933e10abd003a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMenu: 1
-  isNiveau1: 1
-  isNiveau2: 0
-  isNiveau3: 0
-  isNiveau4: 0
+  isNiveau: 0
 --- !u!4 &1958512748
 Transform:
   m_ObjectHideFlags: 0
@@ -11279,6 +11896,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1975918994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11351,7 +11980,7 @@ RectTransform:
   m_Children:
   - {fileID: 1283901846}
   m_Father: {fileID: 747994301}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11469,6 +12098,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Plume
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1977908791
@@ -11615,6 +12268,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 828641462}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1998327977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11755,7 +12420,7 @@ RectTransform:
   m_GameObject: {fileID: 2094715625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6743112, y: 0.9028217, z: 4.917408}
+  m_LocalScale: {x: 4.0720963, y: 0.9028217, z: 4.917408}
   m_Children: []
   m_Father: {fileID: 1860780310}
   m_RootOrder: 2

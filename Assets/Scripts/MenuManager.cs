@@ -5,37 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject Niveau, Niveau_2,Niveau_3,Niveau_4, Accueil, Options, MainMenu, Lore, TutoBalise, TutoMap, TutoLoupe, TutoProgress, TutoBoussole, MenuIngame, OptionsIngame, TransitionGame, MapIngame, Victory;
-
     public TransitionManager transitionManager;
+    
+    public GameObject Niveau, Niveau_2,Niveau_3,Niveau_4, Accueil, Options, MainMenu, Lore, Lore2, Lore3, Lore4, TutoBalise, TutoMap, TutoLoupe, TutoProgress, TutoBoussole, MenuIngame, OptionsIngame, TransitionGame, MapIngame, Victory;
 
     public GameObject HideButton, ShowButton;
+    
     private bool HideIcons;
+    public int isNiveau;
 
-
-    // Sauvegarde de valeurs entre scènes
+    // Sauvegarde de valeurs entre scÃ¨nes
     private void Start()
     {
-        
-        //Methode 2
-        if (transitionManager.isNiveau1== true)
-        {
-            PlayerPrefs.SetInt("level", 1);
-            int saved = PlayerPrefs.GetInt("level", 1);
-        }
-        else if (transitionManager.isNiveau2 == true)
-        {
-            int saved = PlayerPrefs.GetInt("level", 2);
-        }
-        else if (transitionManager.isNiveau3 == true)
-        {
-            int saved = PlayerPrefs.GetInt("level", 3);
-        }
-        else if (transitionManager.isNiveau4 == true)
-        {
-            int saved = PlayerPrefs.GetInt("level", 4);
-        }
+        isNiveau = PlayerPrefs.GetInt("level",1);
+        //PlayerPrefs.SetInt("level", 1);
 
+        if(Accueil != null)
+        {
+            if(isNiveau == 1){
+                Accueil.SetActive(true);
+            }
+            else if (isNiveau == 2){
+                Niveau_2.SetActive(true);
+            }
+            else if (isNiveau == 3){
+                Niveau_3.SetActive(true);
+            }
+            else if (isNiveau == 4){
+                Niveau_4.SetActive(true);
+            }
+        }
     }
 
     // OPEN CANVAS
@@ -49,13 +48,13 @@ public class MenuManager : MonoBehaviour
 
         Niveau.SetActive(true);
 
-        if (transitionManager.isNiveau2 == true){
+        if (isNiveau == 2){
             Niveau_2.SetActive(true);
         }
-        else if (transitionManager.isNiveau3 == true){
+        else if (isNiveau == 3){
             Niveau_3.SetActive(true);
         }
-        else if (transitionManager.isNiveau4 == true){
+        else if (isNiveau == 4){
             Niveau_4.SetActive(true);
         }
     }
@@ -89,19 +88,12 @@ public class MenuManager : MonoBehaviour
     public void TutoBaliseActive()
     {
         TutoBalise.SetActive(true);
+        
+        if (isNiveau == 2 || isNiveau == 3 || isNiveau == 4){
+            TransitionGameActive();
+            transitionManager.OpenGameScene();
+        }
 
-        if (transitionManager.isNiveau2 == true)
-        {
-            Niveau_2.SetActive(true);
-        }
-        else if (transitionManager.isNiveau3 == true)
-        {
-            Niveau_3.SetActive(true);
-        }
-        else if (transitionManager.isNiveau4 == true)
-        {
-            Niveau_4.SetActive(true);
-        }
     }
 
     public void TutoMapActive()

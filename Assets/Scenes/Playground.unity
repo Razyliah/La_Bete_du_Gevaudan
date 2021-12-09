@@ -4365,6 +4365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d31f7d921a3019478b67382f49fdc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionManager: {fileID: 1190770623}
   Niveau: {fileID: 0}
   Niveau_2: {fileID: 0}
   Niveau_3: {fileID: 0}
@@ -4373,6 +4374,9 @@ MonoBehaviour:
   Options: {fileID: 0}
   MainMenu: {fileID: 0}
   Lore: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
   TutoBalise: {fileID: 0}
   TutoMap: {fileID: 0}
   TutoLoupe: {fileID: 0}
@@ -4383,9 +4387,9 @@ MonoBehaviour:
   TransitionGame: {fileID: 0}
   MapIngame: {fileID: 173825385}
   Victory: {fileID: 619092396}
-  transitionManager: {fileID: 1190770623}
   HideButton: {fileID: 1090352863}
   ShowButton: {fileID: 0}
+  isNiveau: 0
 --- !u!4 &76922756
 Transform:
   m_ObjectHideFlags: 0
@@ -29963,6 +29967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471520576}
+  - component: {fileID: 471520577}
   m_Layer: 0
   m_Name: MUSIC
   m_TagString: Untagged
@@ -29985,6 +29990,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &471520577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471520575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9707313aa29f40c44a7c7ecc3af45742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 303188616}
+  volumeSlider: {fileID: 0}
 --- !u!1 &472719015
 GameObject:
   m_ObjectHideFlags: 0
@@ -60855,6 +60874,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1190770623}
+        m_TargetAssemblyTypeName: TransitionManager, Assembly-CSharp
+        m_MethodName: LevelUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1064740891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66781,11 +66812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c63b3191f21724789933e10abd003a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMenu: 1
-  isNiveau1: 1
-  isNiveau2: 0
-  isNiveau3: 0
-  isNiveau4: 0
+  isNiveau: 0
 --- !u!4 &1190770624
 Transform:
   m_ObjectHideFlags: 0

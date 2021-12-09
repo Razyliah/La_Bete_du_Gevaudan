@@ -6,16 +6,15 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class TransitionManager : MonoBehaviour
 {
-    public bool isMenu = true;
-    public bool isNiveau1 = true;
-    public bool isNiveau2;
-    public bool isNiveau3;
-    public bool isNiveau4;
+    //public bool isMenu = true;
+    public int isNiveau;
+
+
 
     private void Start()
     {
-        // Methode 1
-        //DontDestroyOnLoad(gameObject);
+        isNiveau = PlayerPrefs.GetInt("level", 1);
+        Debug.Log(isNiveau);
     }
 
     // SCENE TRANSITION
@@ -23,26 +22,27 @@ public class TransitionManager : MonoBehaviour
     //Open Scene
     public void OpenMenuScene()
     {
+<<<<<<< Updated upstream
         SceneManager.LoadScene (sceneName:"Menu");
         Screen.orientation = ScreenOrientation.Portrait;
+=======
+        SceneManager.LoadScene (sceneName:"Menu");   
+    }
+>>>>>>> Stashed changes
 
-        if (isNiveau1 == true){
-            isNiveau2 = true;
-            isNiveau1 = false;
+    public void LevelUp(){
+  
+        if (isNiveau == 1){
             PlayerPrefs.SetInt("level", 2);
         }
 
-        else if (isNiveau2 == true){
-            isNiveau3 = true;
-            isNiveau2 = false;
+        else if (isNiveau == 2){
             PlayerPrefs.SetInt("level", 3);
         }
 
-        else if (isNiveau3 == true){
-            isNiveau4 = true;
-            isNiveau3 = false;
+        else if (isNiveau == 3){
             PlayerPrefs.SetInt("level", 4);
-        }
+        }     
     }
 
     public void OpenMenuIngameScene()
@@ -71,6 +71,6 @@ public class TransitionManager : MonoBehaviour
 
     public void ResetSave()
     {
-        PlayerPrefs.SetInt("level", 1);
+        PlayerPrefs.DeleteKey("level");
     }
 }

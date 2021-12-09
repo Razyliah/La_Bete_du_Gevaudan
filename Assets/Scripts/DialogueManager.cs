@@ -11,7 +11,6 @@ public class DialogueManager : MonoBehaviour
 
     public float speed = 0.1f;
 
-
     private Queue<string> sentences;
     
     void Start() {
@@ -33,7 +32,6 @@ public class DialogueManager : MonoBehaviour
          
     public void DisplayNextSentence(){
         if (sentences.Count == 0){
-            EndDialogue();
             return;
         }
 
@@ -52,8 +50,4 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-
-    void EndDialogue(){
-        Debug.Log("En of  conversation");
-    }
 }
