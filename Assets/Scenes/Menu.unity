@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1611,6 +1611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cb93e5d8b529242a0dc0da42e720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSlider: {fileID: 0}
   sounds: []
 --- !u!114 &339694486
 MonoBehaviour:
@@ -1897,13 +1898,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 538693437}
   m_HandleRect: {fileID: 412239292}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 828641461}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &390571881
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,9 +4194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2cb93e5d8b529242a0dc0da42e720bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSlider: {fileID: 362885604}
   sounds:
-  - name: 
-    clip: {fileID: 0}
+  - name: Menu
+    clip: {fileID: 8300000, guid: d00809072fccfba40b143da1252068f9, type: 3}
     volume: 0
     pitch: 0
     source: {fileID: 0}
@@ -8261,7 +8275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1085813189}
   dialogueText: {fileID: 1657740461}
-  speed: 0.01
+  speed: 0.05
 --- !u!1 &1557325668
 GameObject:
   m_ObjectHideFlags: 0
@@ -9386,7 +9400,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b0372e039554090419a6c9e86ec3f471, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d00809072fccfba40b143da1252068f9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
