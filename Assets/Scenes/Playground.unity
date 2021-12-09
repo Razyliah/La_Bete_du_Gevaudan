@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.15088084, g: 0.17280799, b: 0.15753743, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.15088122, g: 0.17280847, b: 0.15753795, a: 1}
+>>>>>>> parent of 0830cfb (Audio zones / Post-process / Lighting)
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:

@@ -15,7 +15,11 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c721518025803222f273d2867083debf42d
       flags: 0
     RecentlyUsedScenePath-3:
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c6f1c170e1f38233d2834633c133af6f9
+=======
+      value: 22424703114646680e0b0227036c72151802563f22213229
+>>>>>>> parent of 0830cfb (Audio zones / Post-process / Lighting)
       flags: 0
     RecentlyUsedScenePath-4:
       value: 22424703114646680e0b0227036c72151802563f22213229
