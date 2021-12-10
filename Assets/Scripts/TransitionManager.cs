@@ -22,13 +22,9 @@ public class TransitionManager : MonoBehaviour
     //Open Scene
     public void OpenMenuScene()
     {
-<<<<<<< Updated upstream
         SceneManager.LoadScene (sceneName:"Menu");
         Screen.orientation = ScreenOrientation.Portrait;
-=======
-        SceneManager.LoadScene (sceneName:"Menu");   
     }
->>>>>>> Stashed changes
 
     public void LevelUp(){
   
