@@ -14,7 +14,6 @@ public class TransitionManager : MonoBehaviour
     private void Start()
     {
         isNiveau = PlayerPrefs.GetInt("level", 1);
-        Debug.Log(isNiveau);
     }
 
     // SCENE TRANSITION
