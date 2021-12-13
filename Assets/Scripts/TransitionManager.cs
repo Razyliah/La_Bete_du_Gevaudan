@@ -22,7 +22,11 @@ public class TransitionManager : MonoBehaviour
     public void OpenMenuScene()
     {
         SceneManager.LoadScene (sceneName:"Menu");
-        Screen.orientation = ScreenOrientation.Portrait;
+        //Screen.orientation = ScreenOrientation.Portrait;
+        
+        if (isNiveau == 5){
+            OpenCredits();
+        }
     }
 
     public void LevelUp(){
@@ -37,19 +41,29 @@ public class TransitionManager : MonoBehaviour
 
         else if (isNiveau == 3){
             PlayerPrefs.SetInt("level", 4);
-        }     
+        }   
+
+        else if (isNiveau == 4){
+            PlayerPrefs.SetInt("level", 5);
+        }  
+    }
+
+    public void OpenCredits()
+    {
+        SceneManager.LoadScene (sceneName:"Credits");
+        //Screen.orientation = ScreenOrientation.Portrait;
     }
 
     public void OpenMenuIngameScene()
     {
         SceneManager.LoadScene (sceneName:"Menu Ingame");
-        Screen.orientation = ScreenOrientation.Portrait;
+        // Screen.orientation = ScreenOrientation.Portrait;
     }
 
     public void OpenGameScene()
     {
         SceneManager.LoadScene (sceneName:"Playground");
-        Screen.orientation = ScreenOrientation.Landscape;
+        // Screen.orientation = ScreenOrientation.Landscape;
     }
 
     public void PauseGame ()
