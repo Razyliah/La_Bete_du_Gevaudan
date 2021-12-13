@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -820,18 +820,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 197071870}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
@@ -4083,18 +4071,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 778873721}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
@@ -5237,18 +5213,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 980543053}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 828641462}
         m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
         m_MethodName: Play
@@ -6322,18 +6286,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1150844826}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
@@ -6505,18 +6457,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1158851842}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 828641462}
         m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
         m_MethodName: Play
@@ -7960,18 +7900,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1430420125}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 828641462}
         m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
         m_MethodName: Play
@@ -7982,18 +7910,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Block
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 390571882}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: Niveau2Active
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1430420123
@@ -8066,9 +7982,10 @@ MonoBehaviour:
   dialogue:
     name: "Jacques Andr\xE9 Portefaix"
     sentences:
-    - "Avait 13 ans quand la B\xEAte attaqua un de ses camarades. Au lieu de fuir,
-      il d\xE9cide de la confronter pour sauver son ami. Ensemble, les jeunes bergers
-      r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont \xE9chapp\xE9s!"
+    - "Avait 13 ans quand la B\xEAte a attaqu\xE9 un de ses camarades. Au lieu de
+      fuir, il d\xE9cida de la confronter pour sauver son ami. Ensemble, les jeunes
+      bergers r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont
+      \xE9chapp\xE9s!"
 --- !u!1 &1433274358
 GameObject:
   m_ObjectHideFlags: 0
@@ -8200,9 +8117,10 @@ MonoBehaviour:
   dialogue:
     name: "Jacques Andr\xE9 Portefaix"
     sentences:
-    - "Avait 13 ans quand la B\xEAte attaqua un de ses camarades. Au lieu de fuir,
-      il d\xE9cide de la confronter pour sauver son ami. Ensemble, les jeunes bergers
-      r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont \xE9chapp\xE9s!"
+    - "Avait 13 ans quand la B\xEAte a attaqu\xE9 un de ses camarades. Au lieu de
+      fuir, il d\xE9cida de la confronter pour sauver son ami. Ensemble, les jeunes
+      bergers r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont
+      \xE9chapp\xE9s!"
 --- !u!114 &1457753703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8264,18 +8182,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1457753703}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
@@ -8630,18 +8536,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1476201683}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 828641462}
         m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
         m_MethodName: Play
@@ -9846,6 +9740,7 @@ GameObject:
   - component: {fileID: 1748665404}
   - component: {fileID: 1748665407}
   - component: {fileID: 1748665408}
+  - component: {fileID: 1748665409}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10047,6 +9942,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1748665409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748665403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ecd5ef82b67d544a29e1f7aead242e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1760064540
 GameObject:
   m_ObjectHideFlags: 0
@@ -11301,7 +11208,10 @@ MonoBehaviour:
   dialogue:
     name: "Jacques Andr\xE9 Portefaix"
     sentences:
-    - "Loreeeeeem c'est la vieb tu sais \xE7a"
+    - "Avait 13 ans quand la B\xEAte a attaqu\xE9 un de ses camarades. Au lieu de
+      fuir, il d\xE9cida de la confronter pour sauver son ami. Ensemble, les jeunes
+      bergers r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont
+      \xE9chapp\xE9s!"
 --- !u!114 &1907534076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11363,18 +11273,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1907534076}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
@@ -11579,18 +11477,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1926186175}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 828641462}
         m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
         m_MethodName: Play
@@ -12002,7 +11888,10 @@ MonoBehaviour:
   dialogue:
     name: "Jacques Andr\xE9 Portefaix"
     sentences:
-    - "Loreeeeeem c'est la vieb tu sais \xE7a"
+    - "Avait 13 ans quand la B\xEAte a attaqu\xE9 un de ses camarades. Au lieu de
+      fuir, il d\xE9cida de la confronter pour sauver son ami. Ensemble, les jeunes
+      bergers r\xE9ussirent \xE0 la repousser.  \nRetrouve les moutons qui se sont
+      \xE9chapp\xE9s!"
 --- !u!114 &1977908789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12064,18 +11953,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1977908789}
-        m_TargetAssemblyTypeName: button, Assembly-CSharp
-        m_MethodName: showText
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 390571882}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoreActive
