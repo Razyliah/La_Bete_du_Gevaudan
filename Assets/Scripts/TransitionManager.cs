@@ -6,16 +6,14 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public class TransitionManager : MonoBehaviour
 {
-    public bool isMenu = true;
-    public bool isNiveau1 = true;
-    public bool isNiveau2;
-    public bool isNiveau3;
-    public bool isNiveau4;
+    //public bool isMenu = true;
+    public int isNiveau;
+
+
 
     private void Start()
     {
-        // Methode 1
-        //DontDestroyOnLoad(gameObject);
+        isNiveau = PlayerPrefs.GetInt("level", 1);
     }
 
     // SCENE TRANSITION
@@ -24,34 +22,34 @@ public class TransitionManager : MonoBehaviour
     public void OpenMenuScene()
     {
         SceneManager.LoadScene (sceneName:"Menu");
+        Screen.orientation = ScreenOrientation.Portrait;
+    }
 
-        if (isNiveau1 == true){
-            isNiveau2 = true;
-            isNiveau1 = false;
+    public void LevelUp(){
+  
+        if (isNiveau == 1){
             PlayerPrefs.SetInt("level", 2);
         }
 
-        else if (isNiveau2 == true){
-            isNiveau3 = true;
-            isNiveau2 = false;
+        else if (isNiveau == 2){
             PlayerPrefs.SetInt("level", 3);
         }
 
-        else if (isNiveau3 == true){
-            isNiveau4 = true;
-            isNiveau3 = false;
+        else if (isNiveau == 3){
             PlayerPrefs.SetInt("level", 4);
-        }
+        }     
     }
 
     public void OpenMenuIngameScene()
     {
         SceneManager.LoadScene (sceneName:"Menu Ingame");
+        Screen.orientation = ScreenOrientation.Portrait;
     }
 
     public void OpenGameScene()
     {
         SceneManager.LoadScene (sceneName:"Playground");
+        Screen.orientation = ScreenOrientation.Landscape;
     }
 
     public void PauseGame ()
@@ -68,6 +66,6 @@ public class TransitionManager : MonoBehaviour
 
     public void ResetSave()
     {
-        PlayerPrefs.SetInt("level", 1);
+        PlayerPrefs.DeleteKey("level");
     }
 }

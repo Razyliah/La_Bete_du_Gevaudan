@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -497,6 +497,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &20340770
@@ -958,6 +970,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 581156350}
@@ -1431,6 +1455,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 581156350}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: TutoProgressActive
@@ -1660,6 +1696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d31f7d921a3019478b67382f49fdc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionManager: {fileID: 745968482}
   Niveau: {fileID: 0}
   Niveau_2: {fileID: 0}
   Niveau_3: {fileID: 0}
@@ -1668,6 +1705,9 @@ MonoBehaviour:
   Options: {fileID: 0}
   MainMenu: {fileID: 0}
   Lore: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
   TutoBalise: {fileID: 16917148}
   TutoMap: {fileID: 898322489}
   TutoLoupe: {fileID: 749241769}
@@ -1678,9 +1718,9 @@ MonoBehaviour:
   TransitionGame: {fileID: 0}
   MapIngame: {fileID: 0}
   Victory: {fileID: 0}
-  transitionManager: {fileID: 745968482}
   HideButton: {fileID: 0}
   ShowButton: {fileID: 0}
+  isNiveau: 0
 --- !u!4 &581156351
 Transform:
   m_ObjectHideFlags: 0
@@ -1978,11 +2018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c63b3191f21724789933e10abd003a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMenu: 1
-  isNiveau1: 1
-  isNiveau2: 0
-  isNiveau3: 0
-  isNiveau4: 0
+  isNiveau: 0
 --- !u!4 &745968483
 Transform:
   m_ObjectHideFlags: 0
@@ -2193,6 +2229,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &820480054
@@ -2581,9 +2629,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 581156350}
-        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: TransitionGameActive
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 745968482}
+        m_TargetAssemblyTypeName: TransitionManager, Assembly-CSharp
+        m_MethodName: ResetSave
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2718,6 +2778,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028009146}
   m_CullTransparentMesh: 1
+--- !u!1 &1033977761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1033977764}
+  - component: {fileID: 1033977763}
+  - component: {fileID: 1033977762}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1033977762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033977761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9707313aa29f40c44a7c7ecc3af45742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioSource: {fileID: 2026091426}
+  volumeSlider: {fileID: 2062006512}
+--- !u!114 &1033977763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033977761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2cb93e5d8b529242a0dc0da42e720bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Page
+    clip: {fileID: 8300000, guid: c45157c6ea90ddd4f937b146efa69180, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Paille
+    clip: {fileID: 8300000, guid: 0686caba2af9fd746b7bef1c5472f28c, type: 3}
+    volume: 0.622
+    pitch: 1
+    source: {fileID: 0}
+  - name: Griffe
+    clip: {fileID: 8300000, guid: 594497219bf31cf47af283bf1d79fc83, type: 3}
+    volume: 0.342
+    pitch: 1
+    source: {fileID: 0}
+  - name: Block
+    clip: {fileID: 8300000, guid: d517a4d872912f64fac291a690cdf261, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Arrache
+    clip: {fileID: 8300000, guid: 12212d8663ce5e44695ac22ee49ca8c5, type: 3}
+    volume: 0.519
+    pitch: 1
+    source: {fileID: 0}
+  - name: Plume
+    clip: {fileID: 8300000, guid: a6e82a47efe9b424bbef52ebc4f2917f, type: 3}
+    volume: 0.761
+    pitch: 1
+    source: {fileID: 0}
+--- !u!4 &1033977764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033977761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 774.46515, y: 998.4429, z: 364.27267}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2026091427}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1158546526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,6 +3112,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Paille
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 581156350}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: TransitionGameActive
@@ -3104,6 +3266,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 581156350}
@@ -3341,6 +3515,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1399562823
@@ -3730,6 +3916,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Page
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 581156350}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: TutoMapActive
@@ -4053,6 +4251,7 @@ GameObject:
   - component: {fileID: 1749345698}
   - component: {fileID: 1749345697}
   - component: {fileID: 1749345700}
+  - component: {fileID: 1749345701}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4158,6 +4357,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1749345701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749345696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ecd5ef82b67d544a29e1f7aead242e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1781754652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,6 +4461,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1033977763}
+        m_TargetAssemblyTypeName: SoundControl, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Griffe
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1781754656
@@ -4590,6 +4813,133 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958313306}
   m_CullTransparentMesh: 1
+--- !u!1 &2026091425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2026091427}
+  - component: {fileID: 2026091426}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2026091426
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026091425}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d00809072fccfba40b143da1252068f9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2026091427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026091425}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -189.60284, y: 151.58496, z: -659.90466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1033977764}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029517401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,7 +5129,19 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1033977762}
+        m_TargetAssemblyTypeName: SliderVolume, Assembly-CSharp
+        m_MethodName: VolumeUpdater
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2084794603
 GameObject:
   m_ObjectHideFlags: 0
