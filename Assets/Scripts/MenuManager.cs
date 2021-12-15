@@ -138,6 +138,24 @@ public class MenuManager : MonoBehaviour
         Victory.SetActive(true);
     }
 
+    public void BackButton()
+    {
+        if (isNiveau == 2)
+        {
+            Accueil.SetActive(true);
+            CloseNiveau2();
+        }
+        else if (isNiveau == 3)
+        {
+            Accueil.SetActive(true);
+            CloseNiveau3();
+        }
+        else if (isNiveau == 4)
+        {
+            Accueil.SetActive(true);
+            CloseNiveau4();
+        }
+    }
 
     // CLOSE CANVAS
     public void CloseOptions()
