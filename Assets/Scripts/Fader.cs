@@ -8,7 +8,7 @@ public class Fader : MonoBehaviour
     public Text regionName;
     private float fadeTime;
     private bool fadingIn;
-    public AudioSource audiosource;
+    
 
 
     void Start()
@@ -16,7 +16,7 @@ public class Fader : MonoBehaviour
         regionName.CrossFadeAlpha(0, 0.0f, false);
         fadeTime = 0;
         fadingIn = false;
-        audiosource.Stop();
+       
     }
 
     
@@ -51,7 +51,7 @@ public class Fader : MonoBehaviour
         {
             fadingIn = true;
             regionName.text = other.name;
-            audiosource.Play();
+            
         }
     }
 }
