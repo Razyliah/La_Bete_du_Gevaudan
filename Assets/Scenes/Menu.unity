@@ -5364,22 +5364,22 @@ MonoBehaviour:
   - name: Gabriel
     clip: {fileID: 8300000, guid: cbf18c53569074446bff27b015d39335, type: 3}
     volume: 1
-    pitch: 1.03
+    pitch: 1.15
     source: {fileID: 0}
   - name: Portefaix
     clip: {fileID: 8300000, guid: de30e85e2a075d24a9692291c7af9d12, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 1.15
     source: {fileID: 0}
   - name: Chastel
     clip: {fileID: 8300000, guid: 721a84c57fc5bd649b58000207a8ad16, type: 3}
     volume: 1
-    pitch: 0.1
+    pitch: 1.15
     source: {fileID: 0}
   - name: "La B\xEAte"
     clip: {fileID: 8300000, guid: f10542a380f37ed43884e52c46952dc5, type: 3}
     volume: 1
-    pitch: 1
+    pitch: 1.15
     source: {fileID: 0}
 --- !u!4 &828641463
 Transform:
