@@ -117,6 +117,7 @@ public class MenuManager : MonoBehaviour
     public void MenuIngameActive()
     {
         MenuIngame.SetActive(true);
+        Screen.orientation = ScreenOrientation.Portrait;
     }
     public void OtionsIngameActive()
     {
@@ -221,6 +222,7 @@ public class MenuManager : MonoBehaviour
     public void CloseMenuIngame()
     {
         MenuIngame.SetActive(false);
+        Screen.orientation = ScreenOrientation.Landscape;
     }
     public void CloseOptionsIngame()
     {
