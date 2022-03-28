@@ -7,9 +7,10 @@ public class SliderVolume : MonoBehaviour
 {
     public AudioSource AudioSource;
     public Slider volumeSlider;
-    private float MusicVolume = 1f;
+    private float MusicVolume;
 
     private void Start(){
+        PlayerPrefs.SetFloat("volume", 0.5f);
         AudioSource.Play();
         MusicVolume = PlayerPrefs.GetFloat("volume");
         AudioSource.volume = MusicVolume;
